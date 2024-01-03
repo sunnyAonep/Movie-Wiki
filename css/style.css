@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+#allPage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sliderImages{
+    width: 100%;
+}
+#btnAndPosters{
+    width: 85%;
+}
+#the_form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+#page {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+#imgStyle {
+    height: fit-content;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #514f4f;
+}
+
+#navbar{
+    background: linear-gradient(hsl(0, 0%, 0%),hsl(0, 0%, 47%), hsl(0, 0%, 0%));
+    
+}
+.imgOne{
+    height: 50vh;
+}
+.carousel-caption{
+text-align: start;
+padding-bottom:0;
+bottom: 10%;
+left: 2%;
+}
+.carousel-control-next, .carousel-control-prev {
+    align-items: flex-end;
+}
+button:hover {
+    background: none;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.carousel {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.w-100 {
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #f7f7f7;
+    text-transform:capitalize;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em blue
+}
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+}
+.carousel-caption > h5{
+    color: #ffffff;
+    font-size: 56px;
+}
+.carousel-caption > p{
+    color: #b4b4b4;
+    font-size: 14px;
+}
+#likeBtn{
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: inherit;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+#likeBtn:active{
+    animation: myAnim 0.1s ease 0s 1 normal forwards;
+}
+#fiveButtons{
+    display: flex;
+    gap: 10px;
+
+}
+.nav-item{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(128, 128, 128);
+    transition: 0.5s;
+    transition-timing-function: ease;
+    transform: scaleX(0);
+}
+.nav-item:hover::after{
+    transform: scaleX(1);
+}
+.navbar-brand{
+    width: 5%;
+}

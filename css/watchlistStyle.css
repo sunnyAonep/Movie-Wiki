@@ -1,0 +1,186 @@
+body{
+  margin: 0;
+  background: #000;
+}
+#titlePage{
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 80%;
+  line-break: strict;
+}
+#allPage{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#titlePage>button{
+  border-radius: 10px ;
+  height: 4rem;
+  width: 10rem;
+  color: #ff601c;
+  border: 2px solid #3c3c3c;
+  font-weight: 600;
+  transition: border .2s;
+  background: hsla(0,0%,8%,.87);
+  outline: 2px solid #3c3c3c;
+  transition:all 0.5s ease 0s;
+}
+#titlePage>button:hover{
+  outline: 3px solid #ff601c;
+    height: 4.5rem;
+    width: 10.5rem;
+}
+#titlePage > p{
+  font-size: 56px;
+  font-weight: 700;
+  color: #ccc;
+}
+#userWatchlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  text-align: center;
+  margin-bottom: 20px; 
+  }
+  #posterImg{
+    height: fit-content;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+.card{
+  background-color: #514f4f;
+  width: 90%;
+  border-radius: 10px;
+  color: #ccc;
+  animation: bouncing 2s ease 0s 1 normal forwards;
+}
+.underTitleCard{
+  position: relative;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: #d0d0d0;
+  font-size: 14px;
+}
+.title{
+  font-size: 40px;
+  }
+.navbar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+.anotherAnim:hover{
+  animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #f7f7f7;
+    text-transform:capitalize;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em blue
+}
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+}
+@keyframes myAnim {
+  0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+  }
+@keyframes bouncing {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.nav-item{
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+}
+.nav-item::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(128, 128, 128);
+  transition: 0.5s;
+  transition-timing-function: ease;
+  transform: scaleX(0);
+}
+.nav-item:hover::after{
+  transform: scaleX(1);
+}
+.navbar-brand{
+  width: 5%;
+}
