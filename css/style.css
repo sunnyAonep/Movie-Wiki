@@ -12,6 +12,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
+    background: rgb(251,110,63);
+background: radial-gradient(circle, rgba(251,110,63,1) 68%, rgba(246,12,5,1) 100%);
 }
 #allPage{
     position: relative;
@@ -21,6 +23,7 @@ body {
 }
 #sliderImages{
     width: 100%;
+    height: 45vh;
 }
 #btnAndPosters{
     width: 85%;
@@ -35,7 +38,10 @@ body {
 #page {
     text-align: center;
 }
-
+#timing{
+    height: 25%;
+    color: #514f4f;
+}
 #container {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -43,13 +49,20 @@ body {
     text-align: center;
     margin-bottom: 20px; 
 }
+.card{
+    background: rgb(251,110,63);
+    background: radial-gradient(circle, rgba(251,110,63,1) 32%, rgba(246,12,5,1) 100%);
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #514f4f;
+}
 
 #imgStyle {
     height: fit-content;
+    image-rendering: crisp-edges;
     max-width: 100%;
+    object-fit: cover;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px #514f4f;
+    border-radius: 25px;
 }
 
 #navbar{
@@ -57,7 +70,12 @@ body {
     
 }
 .imgOne{
-    height: 50vh;
+    position: relative;
+    image-rendering: crisp-edges;
+    filter: contrast(125%);
+    left: 5%;
+    width: 90%;
+    height: 45vh;
 }
 .carousel-caption{
 text-align: start;
@@ -77,12 +95,15 @@ button:hover {
 }
 .carousel {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     position: relative;
 }
 .w-100 {
     width: 100%;
     height: 100%;
+    object-fit:fill;
+    image-rendering: crisp-edges;
+    object-position: bottom;
 }
 .navbar {
     position: absolute;

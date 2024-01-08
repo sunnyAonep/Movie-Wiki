@@ -28,7 +28,7 @@
         for (let i = 0; i < data.results.length; i++) {
           const movies = data.results[i];
           container.innerHTML += `
-            <div id="img">
+            <div id="img" data-aos="zoom-in">
               <img src="http://image.tmdb.org/t/p/w500${data.results[i].poster_path}" id='posterImg'>
               <div class="dropdown">
                 <button class="infobtn">info</button>

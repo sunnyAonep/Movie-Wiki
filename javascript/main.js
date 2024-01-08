@@ -59,18 +59,18 @@ const options = {
       for (let i = 0; i < data.results.length; i++) {
         const movies = data.results[i];
         container.innerHTML += `
-        <div>
+        <div class = "card" data-aos="flip-down">
         <img id='imgStyle' src = "http://image.tmdb.org/t/p/w500${data.results[i].poster_path}">
         <span>${data.results[i].original_title}</span>
         <br>
         <button onclick = "saveValButton(${data.results[i].id});" id= 'likeBtn'>
         <img src="../assenst/icons/like.png" alt="buttonpng" border="0" />
         </button>
-        <div>
+        </div>
        `
        console.log(movies);        
       }
-      backGround.style.backgroundImage = `url("http://image.tmdb.org/t/p/w500${data.results[0].backdrop_path}")`
+      // backGround.style.backgroundImage = `url("http://image.tmdb.org/t/p/w500${data.results[0].backdrop_path}")`
     })
     .catch(err => console.log(err));
   }

@@ -14,12 +14,14 @@ body {
     position: relative;
     font-size: 15rem; 
     margin-bottom: 20px;
+   
 }
 
 #imgAndTitle > #luffyh1 > #luffyImg {
     position: absolute;
     width: 70%;
-    padding-left: 25%; 
+    padding-left: 25%;  
+    animation: luffy 2s ease 0s 1 normal forwards;
 }
 
 span {
@@ -82,4 +84,36 @@ a:hover {
 }
 .navbar-brand{
     width: 5%;
+}
+
+@keyframes luffy {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
 }
