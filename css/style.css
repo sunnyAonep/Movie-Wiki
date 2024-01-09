@@ -189,3 +189,42 @@ a:hover {
 .navbar-brand{
     width: 5%;
 }
+
+@media (max-width: 800px) {
+
+
+    body {
+        background-size: auto;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    #allPage {
+        padding: 10px; 
+    }
+
+    .navbar {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        z-index: 1000;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .navbar-brand {
+        width: 10%;
+    }
+
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+
+}
