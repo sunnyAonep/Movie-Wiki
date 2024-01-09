@@ -121,52 +121,65 @@ animation: myAnim 0.1s ease 0s 1 normal forwards;
 .dropdown:hover .infobtn {background-color: #848484;}
 
 .navbar {
-  position: relative;
+  position: sticky;
+  border-radius: 10px;
+  width: 90%;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  width: 100%;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
+  justify-content: space-between; /* Adjusted */
   padding: 0.5rem 1rem;
   z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  
 }
+.navbar > ul  li {
+font-size: 15px;
+}
+.navbar-brand {
+  width: 5%;
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  color: #fff;
 }
+
 a {
-  color: rgb(123, 123, 123);
   text-decoration: none;
-  background-color: transparent;
 }
 
 a:hover {
-  color: #f7f7f7;
-  text-transform:capitalize;
   text-decoration: underline;
-  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em blue
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em blue;
 }
+
 .nav-link:focus, .nav-link:hover {
   text-decoration: none;
 }
-.nav-item{
+
+.nav-item {
   width: max-content;
   position: relative;
   cursor: pointer;
 }
-.nav-item::after{
+
+.nav-item::after {
   content: "";
   position: absolute;
   bottom: -5px;
   height: 4px;
   width: 100%;
   left: 0;
-  background-color: rgb(128, 128, 128);
+  background-color: #f99158;
   transition: 0.5s;
   transition-timing-function: ease;
   transform: scaleX(0);
 }
-.nav-item:hover::after{
+
+.nav-item:hover::after {
   transform: scaleX(1);
 }
 
@@ -181,7 +194,7 @@ a:hover {
 ul{
   margin: 20px 30px;
 }
-ul li{
+.pagination > ul li{
   display: inline-block;
   margin: 0 10px;
   width: 45px;
@@ -223,30 +236,36 @@ ul li.active{
   margin-left: 15px;
   transform: rotate(180deg);
 }
-.navbar-brand{
-  width: 5%;
-}
 
 @media (max-width: 767px) {
-  .navbar-brand {
-      width: 10%; 
-  }
-
-  .nav-link {
-      padding: 0.5rem; 
-  }
   .navbar {
+    position: sticky;
+    border-radius: 10px;
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    align-items: center;
+    justify-content: space-between; 
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
     flex-wrap: nowrap;
-    flex-direction: row;
+}
+
+.navbar-brand {
+    width: 10%;
+}
+
+.nav-link {
+    padding: 0.5rem;
 }
   ul {
       margin: 0; 
       padding: 0;
   }
 
-  ul li {
+ .pagination > ul li {
       display: inline-block;
       margin: 0 5px; 
       width: 30px;

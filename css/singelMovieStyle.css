@@ -123,11 +123,14 @@ button:hover {
 }
 
 .navbar {
-    position: fixed;
+    position: sticky;
+    border-radius: 10px;
+    width: 90%;
     top: 0;
-    left: 0;
+    left: 5%;
     right: 0;
     display: flex;
+    justify-content: space-between; /* Adjusted */
     padding: 0.5rem 1rem;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.8);
@@ -178,13 +181,33 @@ a:hover {
 .nav-item:hover::after {
     transform: scaleX(1);
 }
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #release_date_and_time {
         width: 100%;
     }
 
     #actorsTitle {
         width: 100%;
+    }
+
+    .navbar {
+        position: sticky;
+        border-radius: 10px;
+        width: 90%;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between; 
+        padding: 0.5rem 1rem;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.8);
+        flex-wrap: nowrap;
+    }
+    .navbar-brand {
+        width: 10%;
+    }
+
+    .nav-link {
+        padding: 0.5rem;
     }
 }

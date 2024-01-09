@@ -188,29 +188,6 @@ a:hover {
     gap: 10px;
 
 }
-.nav-item{
-    width: max-content;
-    position: relative;
-    cursor: pointer;
-}
-.nav-item::after{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    height: 4px;
-    width: 100%;
-    left: 0;
-    background-color: rgb(128, 128, 128);
-    transition: 0.5s;
-    transition-timing-function: ease;
-    transform: scaleX(0);
-}
-.nav-item:hover::after{
-    transform: scaleX(1);
-}
-.navbar-brand{
-    width: 5%;
-}
 
 @media (max-width: 800px) {
 
