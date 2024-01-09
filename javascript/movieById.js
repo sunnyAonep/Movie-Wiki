@@ -81,5 +81,10 @@
     btnId.addEventListener('click' , (e) =>{
       e.preventDefault();
       let idVul = imgsId.value;
-      getIdByUser(idVul)
+      if (idVul == "") {
+        alert("try again put a name of movie")
+      }else{
+        getIdByUser(idVul)
+      }
     })
+  

@@ -28,10 +28,32 @@ body {
   width: 100%;
   bottom: 30vh;
 }
-#inputContain > h1{
-  font-size: 56px;
-
+#inputContain > h1 {
+  padding: 20%;
+  font-size: 36px;
+  color: #8a41ff;
+  margin-bottom: 20px;
 }
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ff4574; 
+  border-radius: 8px;
+  outline: none;
+}
+
+#inputContain > form >button {
+  padding: 12px;
+  font-size: 20px;
+  background-color: #ff45c7; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
 #container {
     height: 100%;
     width: 80%;
@@ -203,4 +225,74 @@ ul li.active{
 }
 .navbar-brand{
   width: 5%;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+      width: 10%; 
+  }
+
+  .nav-link {
+      padding: 0.5rem; 
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+  ul {
+      margin: 0; 
+      padding: 0;
+  }
+
+  ul li {
+      display: inline-block;
+      margin: 0 5px; 
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 14px; 
+      line-height: 30px;
+      cursor: pointer;
+      background-position: 0 -30px;
+      transition: background-position 0.5s;
+  }
+
+  ul li.active {
+      color: #fff;
+      background-image: linear-gradient(#ff4568, #ff4568);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+  }
+
+  .btn1,
+  .btn2 {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px; 
+      font-weight: 500;
+      color: #aaaaaa;
+      background: transparent;
+      outline: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  .btn1 img,
+  .btn2 img {
+      width: 16px; 
+  }
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+  #inputContain > h1 {
+      font-size: 24px;
+  }
 }
