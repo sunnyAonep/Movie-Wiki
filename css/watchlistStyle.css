@@ -34,6 +34,18 @@ body {
   background: hsla(0, 0%, 8%, 0.87);
 }
 
+.removeBtn{
+  border-radius: 10px;
+    height: 2rem;
+    width: 4rem;
+    color: #fff;
+    background: #ff601c;
+    border: none;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+    box-shadow: 6px -1px 5px #050404;
+
+}
 #titlePage > button:hover {
   outline: 3px solid #ff601c;
   height: 4.5rem;

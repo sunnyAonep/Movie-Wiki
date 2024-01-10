@@ -64,7 +64,7 @@ const options = {
         <span>${data.results[i].original_title}</span>
         <br>
         <button onclick = "saveValButton(${data.results[i].id});" id= 'likeBtn'>
-        <img src="../assenst/icons/like.png" alt="buttonpng" border="0" />
+        <img src="../assenst/icons/like.png" alt="buttonpng" border="0" class='like' />
         </button>
         </div>
        `

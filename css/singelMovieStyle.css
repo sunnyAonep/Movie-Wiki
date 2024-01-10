@@ -35,7 +35,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     opacity: 90%;
-    background: rgba(0, 0, 0, 0.8);
     flex-wrap: nowrap;
 }
 
@@ -92,6 +91,10 @@ button:hover {
     width: 10.5rem;
 }
 
+#btnId{
+    height: 2rem;
+    width: 5rem;
+}
 #geners {
     color: #f99158;
     font-size: 14px;

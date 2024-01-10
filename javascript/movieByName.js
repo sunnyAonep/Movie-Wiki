@@ -26,13 +26,10 @@
         container.innerHTML = '';
 
         for (let i = 0; i < data.results.length; i++) {
-          const movies = data.results[i];
           container.innerHTML += `
             <div id="img" data-aos="zoom-in">
               <img src="http://image.tmdb.org/t/p/w500${data.results[i].poster_path}" id='posterImg'>
               <div class="dropdown">
-                <button class="infobtn">info</button>
-                <div class="dropdown-content">
                   <p>name of move:${data.results[i].title}</p>
                   <p>vote: ${data.results[i].vote_average}/10</p>
                   <p>release date : ${data.results[i].release_date}</p>
@@ -40,7 +37,6 @@
                   <button onclick="saveValButton(${data.results[i].id});" id='likeBtn'>
                     <img src="../assenst/icons/like.png" alt="buttonpng" border="0" />
                   </button>
-                </div>
               </div>
             </div>
           `;

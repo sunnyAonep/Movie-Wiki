@@ -64,7 +64,11 @@ body {
     height: auto;
     border-radius: 25px;
 }
+.like{
+height: 100%;
+width: 25%;
 
+}
 .imgOne{
     position: relative;
     image-rendering: crisp-edges;
@@ -169,6 +173,7 @@ a:hover {
         cursor: pointer;
         appearance: none;
         background-color: inherit;
+        margin-top: 0;
 }
 @keyframes myAnim {
 	0% {
