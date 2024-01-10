@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    background-image:linear-gradient(rgba(15, 10, 44, 0.9) ,rgba(8, 0, 77, 0.868) ) ,url(/assenst/imgs/back.jpg);
 }
 #allPage{
   height: 100vh;

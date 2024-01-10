@@ -12,8 +12,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background: rgb(251,110,63);
-background: radial-gradient(circle, rgba(251,110,63,1) 68%, rgba(246,12,5,1) 100%);
+    background-image:linear-gradient(rgba(15, 10, 44, 0.9) ,rgba(8, 0, 77, 0.868) ) ,url(/assenst/imgs/back.jpg);
+    scale: 1/1;
 }
 #allPage{
     position: relative;
@@ -51,7 +51,7 @@ background: radial-gradient(circle, rgba(251,110,63,1) 68%, rgba(246,12,5,1) 100
 }
 .card{
     background: rgb(251,110,63);
-    background: radial-gradient(circle, rgba(251,110,63,1) 32%, rgba(246,12,5,1) 100%);
+    background: radial-gradient(circle, #3B3486 32%, #332941 100%);
     border-radius: 25px;
     box-shadow: 10px 10px 5px #514f4f;
 }
